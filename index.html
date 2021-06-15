@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Castillo Construction</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-square-fill" id="go-up" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+    </svg>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="#"><img id="company-logo" class="ms-lg-5 ms-md-1" src="assets/logo.png" alt="company logo"></a>
+          <a class="navbar-brand text-center" href="#">Castillo 
+            <br>  
+            <span class="single-word">Construction</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav float-end text-end">
+              <li class="nav-item p-1">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#testimonial-title">Our work & testimonials</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+    <div id="parallax"></div>
+    <div class="title-card d-flex align-content-center text-center position-absolute text-uppercase">
+        <p id="title-text" class="position-relative d-flex align-self-center justify-content-center align-items-center">Build the future with us</p>
+    </div>
+
+    <h1 id="about-us" class="text-center text-uppercase mt-4">About Us</h1>
+    <hr id="first-hr">
+    <div class="container">
+      <div class="row justify-content-evenly mt-5">
+        <div class="home-page-text col-lg-4 col-md-10 text-center" data-aos="fade-down-right" data-aos-duration="1000">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f07128" class="text-icon d-flex justify-content-end mb-4 bi bi-house" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+          </svg>
+          <h2 class="mb-3">New Homes</h2>
+          <p>We are working closely with clients and architects to move the project forward. We can fulfil a range of requests, from garages and refurbishments to a complete new home.</p>
+        </div>
+        <div class="home-page-text col-lg-4 col-md-10 text-center" data-aos="fade-down-left" data-aos-duration="1000">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f07128" class="text-icon d-flex justify-content-end mb-4 bi bi-building" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+            <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+          </svg>
+          <h2 class="mb-3">Commercial Buildings</h2>
+          <p>Our scope of architecture does extend to commercial buildings. We are capable to deliver small to medium-sized projects. Building small office buildings, restaurants, extensions to premises or refurbishments.</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="home-page-text col-lg-4 col-md-10 text-center" data-aos="fade-up-right" data-aos-duration="1000">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f07128" class="text-icon d-flex justify-content-end mb-4 bi bi-tree-fill" viewBox="0 0 16 16">
+            <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
+          </svg>
+          <h2 class="mb-3">Sustainability</h2>
+          <p>We are committed to our corporate social responsibility policies and our company aims to provide the most sustainable materials and solutions to our customers. By working together with an external partner we are able to build zero emission and passive homes.</p>
+        </div>
+        <div class="home-page-text col-lg-4 col-md-10 text-center" data-aos="fade-up-left" data-aos-duration="1000">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#f07128" class="text-icon d-flex justify-content-end mb-4 bi bi-badge-vr" viewBox="0 0 16 16">
+            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+            <path d="M4.508 11h1.429l1.99-5.999H6.61L5.277 9.708H5.22L3.875 5.001H2.5L4.508 11zm6.387-5.999H8.5V11h1.173V8.763h1.064L11.787 11h1.327L11.91 8.583C12.455 8.373 13 7.779 13 6.9c0-1.147-.773-1.9-2.105-1.9zm-1.222 2.87V5.933h1.05c.63 0 1.05.347 1.05.989 0 .633-.408.95-1.067.95H9.673z"/>
+          </svg>
+          <h2 class="mb-3">Modern Services</h2>
+          <p>Upon request, our 3D & VR artist contractor will deliver cutting edge simulation of any internal of external design, so our customers can experience the architectural design and planning even before the construction starts!</p>
+        </div>
+      </div>
+    </div>
+    
+    <img src="assets/alberto-castillo-q-mx4mSkK9zeo-unsplash2.webp" id="testimonial-banner" class="img-fluid mt-5" alt="">
+    <div id="testimonial-title" class="d-flex align-items-center justify-content-center">
+      <h1 class="text-center text-uppercase">Our Work & Testimonials</h1>
+    </div>
+
+    <div class="container" id="position-fix">
+      <div class="row justify-content-evenly mb-5">
+        <div class="col-lg-4 col-md-10 mb-5 text-center" data-aos="fade-right" data-aos-duration="1000">
+          <p class="testimonial-name" >Example Emily</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam pariatur ut assumenda totam delectus a neque nihil, repellendus rerum perferendis nesciunt fugit veniam. Nam magnam porro quaerat fugiat consectetur aut!</p>
+        </div>
+        <div class="col-lg-4 col-md-10 mb-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+          <p class="testimonial-name">Example Ethan</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis repudiandae nisi praesentium illo. Veniam molestiae dolorum doloremque. Neque architecto eius dicta aspernatur natus mollitia quibusdam quia magnam, atque consectetur necessitatibus?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/dillon-kydd-XGvwt544g8k-unsplash3.webp" alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/lycs-architecture-kUdbEEMcRwE-unsplash3.webp" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid m-0" src="assets/marvin-meyer-bfOQSDwEFg4-unsplash2.webp" alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid m-0" src="assets/ralph-ravi-kayden-2d4lAQAlbDA-unsplash2.webp"alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid m-0" src="assets/r-architecture-KQPEhYweLrQ-unsplash2.webp" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div class="container ">
+      <div class="row justify-content-evenly mt-5 mb-5">
+        <div class="col-lg-4 col-md-10 mb-5 text-center" data-aos="fade-right" data-aos-duration="1000">
+          <p class="testimonial-name" >Example Elizabeth</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam pariatur ut assumenda totam delectus a neque nihil, repellendus rerum perferendis nesciunt fugit veniam. Nam magnam porro quaerat fugiat consectetur aut!</p>
+        </div>
+        <div class="col-lg-4 col-md-10 mb-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+          <p class="testimonial-name">Example Eve</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis repudiandae nisi praesentium illo. Veniam molestiae dolorum doloremque. Neque architecto eius dicta aspernatur natus mollitia quibusdam quia magnam, atque consectetur necessitatibus?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/isaac-quesada-1mvrY8osYkM-unsplash.webp" alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/jonathan-borba-kvYpo0uwKQo-unsplash3.webp" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/jonathan-borba-eyZwrNbaCto-unsplash2.webp" alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/douglas-sheppard-9rYfG8sWRVo-unsplash2.webp" alt="">
+        </div>
+        <div class="col-lg p-0 col-md-12">
+          <img class="img-fluid" src="assets/kara-eads-L7EwHkq1B2s-unsplash2.webp" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <h1 id="contact-us" class="text-center text-uppercase mt-4">Contact Us</h1>
+    <hr id="first-hr">
+    <div class="container mt-5">
+      <div id="footer-row" class="row">
+        <div class="col-lg-6 col-md-10 mb-5 mb-md-3">
+          <div class="d-flex justify-content-center mb-2" data-aos="fade-right" data-aos-duration="1000">
+            <img id="company-logo-bottom" src="assets/logo.png" alt="company logo">
+            <p class="text-center ms-3" id="brand-title" >Castillo 
+            <br>  
+            <span class="single-word">Construction</span></p>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <p class="text-center">If you have a projet in mind, home, commercial building or governmental projects, we'd like to hear from you.</p>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam est ipsa voluptate quia? Exercitationem ad, optio iusto alias non culpa fugiat unde quam iste aperiam? Officia consequatur ex vero iure.</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-0"></div>
+        <div class="col-lg-4 col-md-10">
+          
+          <div class="d-flex justify-content-start align-items-center align-self-center mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <p class="ms-3 mb-0">5555, WebdevCity, Devroad 21, Webdevland</p>
+          </div>
+          <div class="d-flex justify-content-start align-items-center align-self-center mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+            </svg>
+            <p class="ms-3 mb-0">castillo.construction@examplemail.com</p>
+          </div>
+          <div class="d-flex justify-content-start align-items-center align-self-center mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            <p class="ms-3 mb-0">555-5555</p>
+          </div>
+          <div class="d-flex justify-content-start align-items-center align-self-center mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+            <p class="ms-3 mb-0">Follow our Twitter for new updates!</p>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="text-center pt-5 pb-5">
+      <div class="row d-flex justify-content-center">
+        <p class="footer-items">Terms of Service</p>
+        <p class="footer-items">Privacy Policy</p>
+      </div>
+      
+      <div>
+        Castillo Construction Ltd. - 2021
+      </div>
+    </div>
+
+</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+</html>
